@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Awesome Blog</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <!--expand yani responsive, md:medium cihaz-->
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <!-- navbar-brand logo için kullanılır-->
+        <i class="fa-solid fa-house"></i><!--  i: icon , fa ile başlayanlar font-awesome'dan aldığımız icon linkinden-->
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- id'si mobile olanlar medium cihaz altına düşünce 3 çizgi butonuna saklanır-->
+
+      <div id="mobile" class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <!--me-auto : margin end yani sağ taraftan otomaitk boşluk bırakır-->
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="blogs.html" class="nav-link">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input type="text" class="form-control me-1" placeholder="Search" />
+          <button class="btn btn-warning">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="text-center pt-5 mt-5 px-4 border-bottom">
+      <h1 class="display-4 fw-bold">Awesome Blog</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim
+          perferendis quam perspiciatis tempora ipsum commodi ab obcaecati
+          aliquam incidunt, porro distinctio recusandae explicabo, quos
+          quaerat. Illo minima obcaecati nam.
+        </p>
+        <div class="mb-5 d-grid gap-2 d-md-flex justify-content-md-center">
+          <!--d-grid: div elemanları alt alta, gap-2 butonlar arası boşluk, d-md-flex: medium cihazlarda div'in elemanları flex olur yani yan yana -->
+          <button class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-caret-right"></i> Button
+          </button>
+          <button class="btn btn-outline-secondary btn-lg">
+            <i class="fa-solid fa-caret-right"></i> Button
+          </button>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <!--maksimum yükseklik 30vh, overflow-hidden yüksekliğin geri kalanını gizler, resimin altı gizlendi.-->
+          <div class="container px-5">
+            <img src="img/bg2.png" alt="" class="img-fluid border rounded-3 shadow-lg mb-4" width="700" height="500">
+            <!-- img-fluid olduğu divi olduğu gibi kaplar-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="bg-dark px-4 py-5 text-center text-white">
+      <div class="py-2">
+        <h1 class="display-5 fw-bold">Lorem, ipsum.</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim
+            perferendis quam perspiciatis tempora ipsum commodi ab obcaecati
+            aliquam incidunt, porro distinctio recusandae explicabo, quos
+            quaerat. Illo minima obcaecati nam.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button class="btn btn-outline-warning btn-lg">
+              <i class="fa-solid fa-caret-right"></i> Button
+            </button>
+            <button class="btn btn-outline-light btn-lg">
+              <i class="fa-solid fa-caret-right"></i> Button
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4"> <!-- row-cols-1 her satırda 1 eleman, row-cols-lg-3 large cihazda her satırda 3 eleman, row-cols-md-2 medium cihazda her satırsa 2 eleman, g-4 aralarındaki boşluk -->
+        <div class="col"> <!-- her bir card için col-lg-3 col-md-4 col-sm-6 yazabilirdik yine aynı şeyi verirdi. colon 12 parçadır, large cihazda her bir dive 3 parça verdik bu yüzden 4 tane yan yana gelebildi. medium cihazda her bir dive 4 parça verdik yan yana 3 tane oldu, small cihazdan her bir dive 6 parça verdik yan yana 2 tane oldu. --> 
+          <div class="card mb-3 shadow">
+            <img src="img/1.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum.</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi magni sint laboriosam commodi nesciunt optio, quos asperiores eligendi dolore eveniet ipsam esse molestias natus ab maiores fugit ipsum eum et?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 shadow">
+            <img src="img/2.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum.</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi magni sint laboriosam commodi nesciunt optio, quos asperiores eligendi dolore eveniet ipsam esse molestias natus ab maiores fugit ipsum eum et?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 shadow">
+            <img src="img/3.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum.</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi magni sint laboriosam commodi nesciunt optio, quos asperiores eligendi dolore eveniet ipsam esse molestias natus ab maiores fugit ipsum eum et?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 shadow">
+            <img src="img/4.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum.</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi magni sint laboriosam commodi nesciunt optio, quos asperiores eligendi dolore eveniet ipsam esse molestias natus ab maiores fugit ipsum eum et?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 shadow">
+            <img src="img/5.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum.</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi magni sint laboriosam commodi nesciunt optio, quos asperiores eligendi dolore eveniet ipsam esse molestias natus ab maiores fugit ipsum eum et?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3 shadow">
+            <img src="img/6.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Lorem, ipsum.</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi magni sint laboriosam commodi nesciunt optio, quos asperiores eligendi dolore eveniet ipsam esse molestias natus ab maiores fugit ipsum eum et?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <span> All Rights Reserved. @2022</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #3c86da;
+}
+.bg-dark {
+    background-color: #428ee6 !important;
+}
+.card-img-top {  
+    width: 100%;
+    height: 25vh; /* görünür alanın yüzde 25 i  */
+    object-fit: cover; /* kırpılcak bir kısım varsa sağdan soldan cover eder */
+}
+#map {
+    height: 300px;
+}
+@media (min-width: 768px) {  /* cihazın minimum genişliği 768 olduğunda fotoların boyutu görünür alanın %32 si olur */
+    .card-img-top {
+        height: 32vh;
+    }
+    #map {
+        height: 100%;
+    }
+}
